@@ -1,0 +1,125 @@
+<!-- Head Tag -->
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+
+
+<!-- CSS -->
+<style>
+    .winning-humans, .winning-brands {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center !important;
+        flex-wrap: wrap;
+    }
+
+    h4 {
+        margin: 1rem 0 !important;
+    }
+
+    .h2-centered {
+        text-align: center;
+    }
+
+    .headshot,
+    .brand-logo {
+        max-width: 10rem;
+    }
+
+    .winner-container {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 3rem 1rem 1rem 1rem;
+        margin: 0.5rem;
+        background-color: #f3f5f5;
+        width: 250px;
+        height: 450px
+    }
+
+    .winner-brand {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: flex-start;
+        padding: 3rem 1rem; 
+        margin: 0.5rem;
+        background-color: #f3f5f5;
+        width: 250px;
+    }
+
+    @media screen and (max-width: 600px) {
+        .winner-container, .winner-brand {
+            width: 100%;
+            height: auto;
+        }
+        .headshot, .brand-logo {
+            width: 300px !important; 
+        }
+    }
+
+</style>
+
+
+<!-- HTML -->
+<h2 class="h2-centered">2022 Marketplace Masters Winners by Category</h2>
+<p></p>
+<!-- Winning People -->
+<section class="winning-humans">
+    <div class="winner-container">
+        <img class="headshot" src="https://tackle.io/wp-content/uploads/2022/05/scott-summer.png"
+            alt="Image of Scott Sumner">
+        <h5>Ambassador</h5>
+        <h4>Scott Sumner</h4>
+        <p>Director, Strategic Alliances at Wiz</p>
+    </div>
+    <div class="winner-container">
+        <img class="headshot" src="https://tackle.io/wp-content/uploads/2022/05/joey-meucci.png"
+            alt="Image of Joey Meucci">
+        <h5>Trailblazer</h5>
+        <h4>Joey Meucci</h4>
+        <p>Cloud Partner Operations Manager at Seeq</p>
+    </div>
+    <div class="winner-container">
+        <img class="headshot" src="https://tackle.io/wp-content/uploads/2022/05/brittany-bently.png"
+            alt="Image of Brittany Bentley">
+        <h5>Captain</h5>
+        <h4>Brittany Bentley</h4>
+        <p>Principal Business Development Manager at Couchbase</p>
+    </div>
+    <div class="winner-container">
+        <img class="headshot" src="https://tackle.io/wp-content/uploads/2022/05/Mask-group.png"
+            alt="Image of #">
+        <h5>Visionary</h5>
+        <h4>Christine Puccio</h4>
+        <p>VP, Global Cloud Alliances & GTM Programs at F5 Networks</p>
+    </div>
+</section>
+
+<!-- Winning Companies -->
+<section class="winning-brands">
+    <div class="winner-brand">
+        <img class="brand-logo" src="https://tackle.io/wp-content/uploads/2022/05/Zendesk-Logo.png" alt="Image of #">
+        <h5>Catalyst</h5>
+        <h4>Zendesk</h4>
+    </div>
+    <div class="winner-brand">
+        <img class="brand-logo" src="https://tackle.io/wp-content/uploads/2022/05/Datometry-Logo.png" alt="Image of #">
+        <h5>Startup Superstar</h5>
+        <h4>Datometry</h4>
+    </div>
+    <div class="winner-brand">
+        <img class="brand-logo" src="https://tackle.io/wp-content/uploads/2022/05/Starburst-Logo.png" alt="Image of #">
+        <h5>Growth Gamechanger</h5>
+        <h4>Starburst</h4>
+    </div>
+    <div class="winner-brand">
+        <img class="brand-logo" src="https://tackle.io/wp-content/uploads/2022/05/Lacework-Logo.png" alt="Image of #">
+        <h5>Marketplace Maverick</h5>
+        <h4>Lacework</h4>
+    </div>
+</section>
