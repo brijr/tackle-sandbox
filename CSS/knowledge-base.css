@@ -1,0 +1,67 @@
+/* Formatting for site wide text - remove the important tag if any issues arise with title formatting */
+h1 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 24pt;
+	font-weight: bolder;
+    font-style: italic;
+    color: #209DB2;
+	text-align: center;
+    text-transform: uppercase;
+}
+h2 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 18pt;
+	font-weight: normal;
+    font-style: italic;
+	color: #063649;
+	
+}
+h3 {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 14pt;
+	font-weight: lighter;
+	color: #063649;
+	
+}
+p {
+	font-family: 'Open Sans', sans-serif;
+	font-size: 12pt;
+	color: #063649;
+}
+a {
+	color: #209DB2;
+	font-weight: bold;
+}
+
+.mp-section {
+	font-family: 'Open Sans', sans-serif;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	width: 100%;
+	max-width: 100vw;
+	margin: 0;
+	padding: 1rem;
+}
+.link {
+	display: block;
+	margin-top: 1rem;
+	font-size: 1.2rem;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-wrap: wrap;
+	padding: 1rem;
+	width: 100%;
+	background-color: #F3F5F5;
+	text-emphasis: none;
+	text-decoration: none;
+	color: black;
+	border-radius: 5px;
+}
+.link:hover {
+	background-color: #209DB2;
+	color: white;
+	transition: all 0.1s ease-in-out;
+}
