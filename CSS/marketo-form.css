@@ -2,12 +2,14 @@
 
 #mktoStyleLoaded {
     /* css load detection, do not remove */
-    color: #063649;
+    color: #063649 !important;
 }
 
 .mktoForm {
     color: #063649 !important;
-    
+    font-family: 'Open Sans', sans-serif !important;
+    font-weight: 300 !important;
+    width: 100% !important;
 }
 
 .mktoForm fieldset {
@@ -26,9 +28,69 @@
 .mktoForm input[type=date] {
     width: auto;
     border: 0 solid #fff !important;
-    background: #F3F5F5;
-    padding: 1rem;
-    margin-bottom: 1rem;
+    background: #F3F5F5 !important;
+    padding: 1rem !important;
+    margin: 1rem 0 !important;
+}
+
+.mktoGutter {
+    width: 1rem !important;
+    float: none !important;
+}
+
+input {
+    max-width: 100% !important;
+}
+
+label,
+input {
+    width: 100% !important;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+.mktoCheckboxList>input {
+    width: 20px !important;
+    padding: 1rem 0 !important;
+}
+
+.mktoCheckboxList>label {
+    width: fit-content !important;
+    padding: 0 1.5rem 0 0 !important;
+}
+
+.mktoCheckboxList {
+    display: flex !important;
+    columns: 2 !important;
+    flex-direction: row !important;
+    gap: 10px !important;
+    flex-wrap: wrap !important;
+    width: 100% !important;
+    margin-bottom: 1.5rem !important;
+}
+
+.mktoLogicalField {
+    width: auto !important;
+}
+
+.mktoHasWidth {
+    width: auto !important;
+}
+
+.mktoFieldWrap,
+.mktoRequiredField {
+    width: 100% !important;
+}
+
+.mktoLabel {
+    width: 100% !important;
+    float: none !important;
+
+}
+
+.mktoForm,
+.mktoFormCol {
+    float: none !important;
 }
 
 .mktoForm input[type=text],
@@ -39,7 +101,9 @@
 .mktoForm input[type=date],
 .mktoForm textarea.mktoField,
 .mktoForm select.mktoField {
-    padding: 1rem;
+    width: 100% !important;
+    border-radius: 5px !important;
+    margin: 0 !important;
 }
 
 .mktoForm input[type=text]:focus,
@@ -51,4 +115,9 @@
 .mktoForm select.mktoField:focus,
 .mktoForm textarea.mktoField:focus {
     width: auto;
+    border: #063649 1px solid !important;
+}
+
+.mktoButtonWrap {
+    margin: 0 !important;
 }
