@@ -1,0 +1,54 @@
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+
+#mktoStyleLoaded {
+    /* css load detection, do not remove */
+    color: #063649;
+}
+
+.mktoForm {
+    color: #063649 !important;
+    
+}
+
+.mktoForm fieldset {
+    width: auto;
+}
+
+.mktoForm fieldset legend {
+    width: auto;
+}
+
+.mktoForm input[type=text],
+.mktoForm input[type=url],
+.mktoForm input[type=email],
+.mktoForm input[type=tel],
+.mktoForm input[type=number],
+.mktoForm input[type=date] {
+    width: auto;
+    border: 0 solid #fff !important;
+    background: #F3F5F5;
+    padding: 1rem;
+    margin-bottom: 1rem;
+}
+
+.mktoForm input[type=text],
+.mktoForm input[type=url],
+.mktoForm input[type=email],
+.mktoForm input[type=tel],
+.mktoForm input[type=number],
+.mktoForm input[type=date],
+.mktoForm textarea.mktoField,
+.mktoForm select.mktoField {
+    padding: 1rem;
+}
+
+.mktoForm input[type=text]:focus,
+.mktoForm input[type=url]:focus,
+.mktoForm input[type=email]:focus,
+.mktoForm input[type=tel]:focus,
+.mktoForm input[type=number]:focus,
+.mktoForm input[type=date]:focus,
+.mktoForm select.mktoField:focus,
+.mktoForm textarea.mktoField:focus {
+    width: auto;
+}
