@@ -1,18 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
 
+    <script>
+        /*
+* Create a completely barebones, user-styles-only Marketo form
+* by removing inline STYLE attributes and disabling child STYLE elements
+*/
+
+        MktoForms2.loadForm("//app-ab09.marketo.com", "729-DHM-431", 1473);
+        MktoForms2.whenReady(function (form) {
+            var formEl = form.getFormElem()[0];
+
+            // remove element styles from root and children (may want to disable this while debugging)
+            for (var elsWithStyles = document.querySelectorAll('#' + formEl.id + ', #' + formEl.id + ' [style]'), i = 0, imax = elsWithStyles.length; i < imax; i++) {
+                elsWithStyles[i].removeAttribute('style');
+            }
+
+            // disable all Marketo-sourced stylesheets
+            for (var styleSheets = document.styleSheets, i = 0, imax = styleSheets.length; i < imax; i++) {
+                var ssLoc = document.createElement('A');
+                ssLoc.href = styleSheets[i].href;
+
+                if ((ssLoc.hostname.search(/\.marketo\.com$/) !== -1) //  external STYLEs
+                    ||
+                    ((styleSheets[i].ownerNode || styleSheets[i].owningElement).parentNode == formEl)) { //  inline STYLEs within FORM tag
+                    styleSheets[i].disabled = true;
+                }
+            }
+        });
+    </script>
+
     <!-- Marketo Script -->
     <script src="//go.tackle.io/js/forms2/js/forms2.min.js"></script>
     <script>MktoForms2.loadForm("//go.tackle.io", "418-FCA-616", 1009);</script>
     <script>
-        jQuery(document).ready(function($) {
-            MktoForms2.whenReady( function(form) {
-                $('#mktoForms2BaseStyle').remove(); 
+        jQuery(document).ready(function ($) {
+            MktoForms2.whenReady(function (form) {
+                $('#mktoForms2BaseStyle').remove();
                 $('#mktoForms2ThemeStyle').remove();
             });
         })
@@ -24,7 +54,9 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
 </head>
+
 <body>
     <form id="mktoForm_1009"></form>
 </body>
+
 </html>

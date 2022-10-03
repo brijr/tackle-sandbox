@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;500;600;700&display=swap");
 
 #mktoStyleLoaded {
     /* css load detection, do not remove */
@@ -7,7 +7,7 @@
 
 .mktoForm {
     color: #063649 !important;
-    font-family: 'Open Sans', sans-serif !important;
+    font-family: "Open Sans", sans-serif !important;
     font-weight: 300 !important;
     width: 100% !important;
 }
@@ -20,15 +20,15 @@
     width: auto;
 }
 
-.mktoForm input[type=text],
-.mktoForm input[type=url],
-.mktoForm input[type=email],
-.mktoForm input[type=tel],
-.mktoForm input[type=number],
-.mktoForm input[type=date] {
-    width: auto;
+.mktoForm input[type="text"],
+.mktoForm input[type="url"],
+.mktoForm input[type="email"],
+.mktoForm input[type="tel"],
+.mktoForm input[type="number"],
+.mktoForm input[type="date"] {
+    width: 100% !important;
     border: 0 solid #fff !important;
-    background: #F3F5F5 !important;
+    background: #f3f5f5 !important;
     padding: 1rem !important;
     margin: 1rem 0 !important;
 }
@@ -38,33 +38,18 @@
     float: none !important;
 }
 
-input {
-    max-width: 100% !important;
-}
-
-label,
-input {
-    width: 100% !important;
-    margin: 0 !important;
-    padding: 0 !important;
-}
-
 .mktoCheckboxList>input {
-    width: 20px !important;
+    width: fit-content !important;
     padding: 1rem 0 !important;
 }
 
 .mktoCheckboxList>label {
-    width: fit-content !important;
-    padding: 0 1.5rem 0 0 !important;
+    width: 100% !important;
+    padding: 0 0 1rem 1.5rem !important;
 }
 
 .mktoCheckboxList {
-    display: flex !important;
-    columns: 2 !important;
-    flex-direction: row !important;
     gap: 10px !important;
-    flex-wrap: wrap !important;
     width: 100% !important;
     margin-bottom: 1.5rem !important;
 }
@@ -80,12 +65,19 @@ input {
 .mktoFieldWrap,
 .mktoRequiredField {
     width: 100% !important;
+    margin: 1rem 0;
 }
 
 .mktoLabel {
     width: 100% !important;
     float: none !important;
-
+    display: flex;
+    flex-direction: row-reverse;
+    gap: 5px;
+    justify-content: left;
+    font-weight: 600;
+    font-size: large;
+    color: #063649;
 }
 
 .mktoForm,
@@ -93,31 +85,22 @@ input {
     float: none !important;
 }
 
-.mktoForm input[type=text],
-.mktoForm input[type=url],
-.mktoForm input[type=email],
-.mktoForm input[type=tel],
-.mktoForm input[type=number],
-.mktoForm input[type=date],
+.mktoForm input[type="text"],
+.mktoForm input[type="url"],
+.mktoForm input[type="email"],
+.mktoForm input[type="tel"],
+.mktoForm input[type="number"],
+.mktoForm input[type="date"],
 .mktoForm textarea.mktoField,
 .mktoForm select.mktoField {
     width: 100% !important;
-    border-radius: 5px !important;
-    margin: 0 !important;
-}
-
-.mktoForm input[type=text]:focus,
-.mktoForm input[type=url]:focus,
-.mktoForm input[type=email]:focus,
-.mktoForm input[type=tel]:focus,
-.mktoForm input[type=number]:focus,
-.mktoForm input[type=date]:focus,
-.mktoForm select.mktoField:focus,
-.mktoForm textarea.mktoField:focus {
-    width: auto;
-    border: #063649 1px solid !important;
+    margin: 1rem 0 !important;
 }
 
 .mktoButtonWrap {
     margin: 0 !important;
+}
+
+.mktoAsterix {
+    color: #bf0000;
 }
