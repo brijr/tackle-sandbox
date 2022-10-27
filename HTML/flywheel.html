@@ -14,8 +14,8 @@
     /* Necessary to select only SVG <a> elements, and not also HTML's.
      See warning below */
 
-    svg|a {
-      transition: all 500ms;
+    svg|a path {
+      transition: all 500ms !important;
     }
 
     svg|a path:link,
@@ -25,15 +25,16 @@
 
     svg|a path:hover,
     svg|a path:active {
-      fill: red;
-      filter: drop-shadow(0 0 0.75rem rgba(0, 0, 0, 0.25));
+      opacity: 0.5;
+      filter: drop-shadow(0 0 0.75rem rgba(208, 208, 208, 0.25));
+      background-color: white;
     }
   </style>
 </head>
 
 <body style="max-width: 100vw; max-height: 100vh;">
   <div style="display: flex; justify-content: center; align-items: center; max-width: 100%; max-height: 100%;">
-    <svg width="1000" height="1000" viewBox="0 0 1000 1000" fill="none" xmlns="http://www.w3.org/2000/svg">
+    <svg width="1000" height="1000" fill="none" xmlns="http://www.w3.org/2000/svg">
       <path
         d="M499.564 755.263C359.128 755.263 244.888 640.907 244.888 500.328C244.888 359.75 359.128 245.394 499.564 245.394C640 245.394 754.239 359.767 754.239 500.328C754.239 640.89 639.965 755.263 499.564 755.263ZM499.564 295.599C459.111 295.609 419.57 307.627 385.941 330.132C352.311 352.636 326.103 384.618 310.63 422.033C295.158 459.447 291.116 500.614 299.015 540.328C306.915 580.042 326.401 616.519 355.01 645.148C383.619 673.776 420.066 693.27 459.742 701.164C499.418 709.058 540.542 704.998 577.913 689.497C615.284 673.996 647.225 647.75 669.695 614.078C692.166 580.407 704.157 540.822 704.154 500.328C704.104 446.034 682.53 393.979 644.171 355.594C605.812 317.209 553.803 295.631 499.564 295.599Z"
         fill="url(#paint0_radial_389_7109)" />
