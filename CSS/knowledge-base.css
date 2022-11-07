@@ -3,31 +3,35 @@ h1 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 24pt;
 	font-weight: bolder;
-    font-style: italic;
-    color: #209DB2;
+	font-style: italic;
+	color: #209DB2;
 	text-align: center;
-    text-transform: uppercase;
+	text-transform: uppercase;
 }
+
 h2 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 18pt;
 	font-weight: normal;
-    font-style: italic;
+	font-style: italic;
 	color: #063649;
-	
+
 }
+
 h3 {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 14pt;
 	font-weight: lighter;
 	color: #063649;
-	
+
 }
+
 p {
 	font-family: 'Open Sans', sans-serif;
 	font-size: 12pt;
 	color: #063649;
 }
+
 a {
 	color: #209DB2;
 	font-weight: bold;
@@ -44,6 +48,7 @@ a {
 	margin: 0;
 	padding: 1rem;
 }
+
 .link {
 	display: block;
 	margin-top: 1rem;
@@ -60,6 +65,7 @@ a {
 	color: black;
 	border-radius: 5px;
 }
+
 .link:hover {
 	background-color: #209DB2;
 	color: white;
