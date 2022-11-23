@@ -8,7 +8,7 @@
   <title>ChurnZero</title>
 </head>
 
-<body style="display: flex; justify-content: center; padding: 0; margin: 0">
+<body style="display: flex; flex-direction: column; justify-content: center; padding: 0; margin: 0">
   <!-- Template -->
   <div style="
         background-image: linear-gradient(to right bottom, #063649, #0c4e63, #11677e, #178198, #209db2);
@@ -20,11 +20,13 @@
       <img
         src="https://raw.githubusercontent.com/brijr/tackle-sandbox/d21dbb7dc9ffc119b9f6cc027e1d3511cef94d9e/Images/logo-white.svg"
         alt="Tackle Logo"
-        style="width: 125px; " />
+        style="width: 125px;" />
     </a>
   </div>
 
-  {{messageContent}}
+  <div style="padding: 2rem;">
+    {{messageContent}}
+  </div>
 
   <div style="background-color: ;">
 
